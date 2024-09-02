@@ -275,6 +275,6 @@ for (gene_num in gene_num_vec) {
     res$DE[DEgene] <- TRUE
     return(res)
   }, mc.cores = 20, mc.set.seed = TRUE, mc.preschedule = FALSE)
-  saveRDS(res, file = paste0("path/comment", gene_num, ".rds"))
+  saveRDS(res, file = paste0("data_path/comment", gene_num, ".rds"))
 }
 
